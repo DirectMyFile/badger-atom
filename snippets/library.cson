@@ -1,0 +1,13 @@
+".source.badger":
+  "Print":
+    "prefix": "pr"
+    "body": """
+      print(${1:value})
+    """
+  "Async":
+    "prefix": "async"
+    "body": """
+      async(() -> {
+        ${1:body}
+      })
+    """

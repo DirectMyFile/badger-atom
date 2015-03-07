@@ -1,7 +1,22 @@
 let x = 0
 var x = 0
-print("Hello\u0001 World")
 
-func name() {
-  print("Hello World")
+print("Hello\u0001World")
+
+func hello() {
+  return "Hello World"
+}
+
+```
+console.log("Hello World")
+```
+
+while true {
+  if true {
+    break
+  }
+}
+
+while true {
+  print("Hello")
 }
