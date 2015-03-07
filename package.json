@@ -1,0 +1,11 @@
+{
+  "name": "language-badger",
+  "version": "0.1.0",
+  "description": "Adds language support for Badger",
+  "repository": "https://github.com/DirectMyFile/badger-atom",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {}
+}

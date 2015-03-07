@@ -1,0 +1,67 @@
+'fileTypes': [
+  'badger'
+]
+'name': 'Badger'
+'scopeName': 'source.badger'
+'patterns': [
+  {
+    'match': '\\b(true|false)\\b'
+    'name': 'constant.boolean.badger'
+  }
+  {
+    'match': '\\b(var|let)\\b'
+    'name': 'storage.modifier.badger'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.badger'
+    'patterns': [
+      {
+        'match': '\\\\(x\\h{2}|[0-2][0-7]{,2}|3[0-6][0-7]?|37[0-7]?|[4-7][0-7]?|.)'
+        'name': 'constant.character.escape.badger'
+      }
+      {
+        'match': '\\$\\((\\w+)\\)'
+        'name': 'variable.parameter.badger'
+      }
+    ]
+  }
+  {
+    'match': ','
+    'name': 'meta.delimiter.object.comma.badger'
+  }
+  {
+    'match': '(?<!\\.)\\b(func)(?!\\s*:)\\b'
+    'name': 'storage.type.function.badger'
+  }
+  {
+    'match': '\\.'
+    'name': 'meta.delimiter.method.period.badger'
+  }
+  {
+    'match': '\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b'
+    'name': 'constant.numeric.badger'
+  }
+  # {
+  #  'match': '?<!\\.)\\b(if|else|while|for|break|return)(?!\\s*:)\\b'
+  #  'name': 'keyword.control.badger'
+  # }
+  {
+    'match': '(?<!\\.)\\b(in)(?!\\s*:)\\b'
+    'name': 'keyword.operator.badger'
+  }
+
+  {
+    'match': '(?<!\\.)\\btrue(?!\\s*:)\\b'
+    'name': 'constant.language.boolean.true.badger'
+  }
+  {
+    'match': '(?<!\\.)\\bfalse(?!\\s*:)\\b'
+    'name': 'constant.language.boolean.false.badger'
+  }
+  {
+    'match': '(?<!\\.)\\b(print)(?!\\s*:)\\b'
+    'name': 'support.function.badger'
+  }
+]
