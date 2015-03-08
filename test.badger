@@ -17,6 +17,16 @@ while true {
   }
 }
 
+if 5 == 2 {
+  print("5 and 2 are equal!")
+}
+
+switch 5 {
+  case 5 {
+    print("5 is 5!")
+  }
+}
+
 while true {
   print("Hello")
 }

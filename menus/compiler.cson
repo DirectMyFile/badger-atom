@@ -1,0 +1,16 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      {
+        'label': 'Badger'
+        'submenu': [
+          {
+            'label': 'Compile to JavaScript'
+            'command': 'badger:compile-js'
+          }
+        ]
+      }
+    ]
+  }
+]

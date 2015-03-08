@@ -32,6 +32,10 @@
     ]
   }
   {
+    'match': '\\;'
+    'name': 'punctuation.terminator.statement.badger'
+  }
+  {
     'begin': '```'
     'end': '```'
     'name': 'string.native.badger'
@@ -53,7 +57,7 @@
     'name': 'constant.numeric.badger'
   }
   {
-    'match': '(?<!\\.)\\b(for|while|if|else|return|break)(?!\\s*:)\\b'
+    'match': '(?<!\\.)\\b(for|while|if|else|return|break|switch|case)(?!\\s*:)\\b'
     'name': 'keyword.control.badger'
   }
   {
@@ -61,10 +65,9 @@
     'name': 'keyword.operator.assignment.badger'
   }
   {
-    'match': '(?<!\\.)\\b(in)(?!\\s*:)\\b'
+    'match': '(in|==|!=|\\+|-|>|<|>=|<=|\\*|\\/|<<|>>)'
     'name': 'keyword.operator.badger'
   }
-
   {
     'match': '(?<!\\.)\\btrue(?!\\s*:)\\b'
     'name': 'constant.language.boolean.true.badger'
@@ -74,7 +77,7 @@
     'name': 'constant.language.boolean.false.badger'
   }
   {
-    'match': '(?<!\\.)\\b(print)(?!\\s*:)\\b'
+    'match': '(?<!\\.)\\b(print|async|run)(?!\\s*:)\\b'
     'name': 'support.function.badger'
   }
 ]
